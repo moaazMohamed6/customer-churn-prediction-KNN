@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv("M:/learning/ML course/telecom_churn_clean.csv")
+df = pd.read_csv("telecom_churn_clean.csv")
 
 x = df[["account_length","total_day_minutes","customer_service_calls"]]
 y = df[["churn"]]
@@ -31,4 +31,5 @@ plt.xlabel('Number of Neighbors (k)')
 plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
+
     
